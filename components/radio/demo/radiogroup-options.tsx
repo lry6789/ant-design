@@ -2,23 +2,23 @@ import React, { useState } from 'react';
 import type { RadioChangeEvent } from 'antd';
 import { Radio } from 'antd';
 
-const plainOptions = ['Apple', 'Pear', 'Orange'];
+const plainOptions = ['True', 'False', 'Unclear'];
 const options = [
-  { label: 'Apple', value: 'Apple' },
-  { label: 'Pear', value: 'Pear' },
-  { label: 'Orange', value: 'Orange' },
+  { label: 'True', value: 'True' },
+  { label: 'False', value: 'False' },
+  { label: 'Unclear', value: 'Unclear' },
 ];
 const optionsWithDisabled = [
-  { label: 'Apple', value: 'Apple' },
-  { label: 'Pear', value: 'Pear' },
-  { label: 'Orange', value: 'Orange', disabled: true },
+  { label: 'True', value: 'True' },
+  { label: 'False', value: 'False' },
+  { label: 'Unclear', value: 'Unclear', disabled: true },
 ];
 
 const App: React.FC = () => {
-  const [value1, setValue1] = useState('Apple');
-  const [value2, setValue2] = useState('Apple');
-  const [value3, setValue3] = useState('Apple');
-  const [value4, setValue4] = useState('Apple');
+  const [value1, setValue1] = useState('True');
+  const [value2, setValue2] = useState('True');
+  const [value3, setValue3] = useState('True');
+  const [value4, setValue4] = useState('True');
 
   const onChange1 = ({ target: { value } }: RadioChangeEvent) => {
     console.log('radio1 checked', value);
